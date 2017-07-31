@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.cyka.cykavodka.resultats">
+
+    <TextView
+        android:id="@+id/afficher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/afficher2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        android:layout_below="@+id/afficher"
+        android:layout_alignLeft="@+id/taux"
+        android:layout_alignStart="@+id/taux"
+        android:layout_alignRight="@+id/taux"
+        android:layout_alignEnd="@+id/taux" />
+
+    <TextView
+        android:id="@+id/afficher3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        android:layout_below="@+id/afficher2"
+        android:layout_alignLeft="@+id/taux"
+        android:layout_alignStart="@+id/taux"
+        android:layout_alignRight="@+id/taux"
+        android:layout_alignEnd="@+id/taux" />
+
+    <TextView
+        android:id="@+id/taux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_below="@+id/afficher3"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/oui"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/permis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/taux"
+        android:layout_marginTop="22dp"
+        android:fontFamily="monospace"
+        android:text="Possédez vous un permis probatoire?"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/oui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/permis"
+        android:fontFamily="monospace"
+        android:onClick="onClickOui"
+        android:text="Oui"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/non"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/permis"
+        android:fontFamily="monospace"
+        android:onClick="onClickNon"
+        android:text="Non"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/oui"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_below="@+id/permis">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/conduite"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="65dp"
+            app:srcCompat="@drawable/a"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="OU"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="97dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/permis"
+        android:layout_marginTop="42dp"
+        android:layout_toLeftOf="@+id/non"
+        android:layout_toStartOf="@+id/non" />
+
+</RelativeLayout>

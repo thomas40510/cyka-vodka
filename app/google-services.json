@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "977934113364",
+    "firebase_url": "https://cyka-vodka.firebaseio.com",
+    "project_id": "cyka-vodka",
+    "storage_bucket": "cyka-vodka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977934113364:android:d9784f626bf1c516",
+        "android_client_info": {
+          "package_name": "com.dev.cyka.cykavodka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977934113364-dcbac2ctnbugee4vgdqbt2mvnkdmfupm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.cyka.cykavodka",
+            "certificate_hash": "3e44f4e4b0d0097cc731727d62dbc8263e50c819"
+          }
+        },
+        {
+          "client_id": "977934113364-3v8i2rrj2umjvst927rkntugap6695kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6feMcAWXiTN4CprrYKG-7PLN7wyDvOXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977934113364-3v8i2rrj2umjvst927rkntugap6695kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

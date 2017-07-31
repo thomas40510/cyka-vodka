@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dev.cyka.cykavodka">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".SmoochInit"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Reflex" />
+        <activity android:name=".results" />
+        <activity
+            android:name=".Achievements"
+            android:label="@string/title_activity_achievements"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".credits" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Calculator" />
+        <activity android:name=".CalcResults" />
+        <activity android:name=".permis"></activity>
+    </application>
+
+</manifest>

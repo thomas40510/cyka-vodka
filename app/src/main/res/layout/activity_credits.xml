@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.cyka.cykavodka.credits">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text='"Cyka Vodka"'
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Application développée par"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView32"
+        android:layout_below="@+id/textView31"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView33"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_below="@+id/textView33"
+        android:text="Pablo Bondia-Luttiau"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Thomas Prévost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView32"
+        android:layout_toRightOf="@+id/textView32"
+        android:layout_toEndOf="@+id/textView32"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Christophe Heurion"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView35"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="©2017 Rush B dev studio" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        android:id="@+id/imageButton"
+        android:background="@android:color/transparent"
+        android:onClick="goBack"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="contactDevs"
+        android:text="Contacter les Développeurs"
+        android:layout_above="@+id/textView47"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
